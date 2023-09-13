@@ -1,0 +1,11 @@
+// global styles
+@import './reset';
+@import './fonts';
+@import './vars';
+@import './utils';
+
+// components
+@import './components/data';
+@import './components/quest';
+@import './components/success';
+@import './components/failure';

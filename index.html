@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відповіді на запитання</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo header__logo">
+            <img src="img/logo.svg" alt="logo" width="101" height="101">
+        </a>
+    </header>
+
+    <main class="main">
+        <section class="data screen js-screen is-active">
+            <div class="container">
+                <div class="box box-reverse">
+                    <p class="data__desc">
+                        Після натискання кнопки Далі, у тебе буде 5 хвилин на його проходження. Також, у тебе не буде
+                        можливості пройти цей квіз знову. Будь ласка, будь уважним. Та не забувай, кожен твій набраний
+                        бал - це реальні гроші!
+                        <span>250 гривень</span> за кожну вірну відповідь!
+                        Успіхів тобі!
+                    </p>
+                </div>
+                <div class="box">
+                    <p class="data__title">Контактні дані</p>
+                    <p class="data__subtitle">Заповняй форму нижче і ми з тобою обов'язково зв'яжемося</p>
+                    <form class="data__form js-data-form">
+                        <div class="data__form_header">
+                            <label class="data__form_label">
+                                <span>Ім’я та Прізвище</span>
+                                <input type="text" class="data__form_input js-data-input js-data-name" required name="name">
+                            </label>
+                            <label class="data__form_label">
+                                <span>Номер телефону</span>
+                                <input type="text" class="data__form_input js-data-input js-data-phone" required name="phone">
+                            </label>
+                        </div>
+                        <label class="data__form_label">
+                            <span>Телеграм</span>
+                            <input type="text" class="data__form_input js-data-input js-data-telegram" required name="telegram">
+                        </label>
+                    </form>
+                </div>
+                <div class="button__next">
+                    <button class="button js-change-screen">
+                        <span>Далі</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.08334 4.16668L12.9167 10L7.08334 15.8333" stroke="" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="quest screen js-screen">
+            <div class="progress">
+                <div class="progress__active js-progress-active"></div>
+            </div>
+            <div class="progress__mob">
+                <div class="progress__active_mob js-progress-active-mob"></div>
+            </div>
+            <div class="container">
+                <div class="quest__timer js-timer">
+                    <p class="quest__item">
+                        <span class="js-timer-minutes">04</span>
+                        Хвилин
+                    </p>
+                    <span class="quest__dots">:</span>
+                    <p class="quest__item">
+                        <span class="js-timer-seconds">59</span>
+                        Секунд
+                    </p>
+                </div>
+                <form class="quest__form js-quest-form">
+                    <input type="hidden" name="name">
+                    <input type="hidden" name="phone">
+                    <input type="hidden" name="telegram">
+                    <input type="hidden" name="time">
+                    <div class="question js-question is-active">
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи було обмеження обмеження за кількістю символів по введенню в поле ім'я?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer1">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer1">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи були присутні у формі зворотного зв'язку плейсхолдери?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer2">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer2">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question js-question ">
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи був виявлений вами hover на кнопці "Відправити"?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer3">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer3">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи був thank you page або alert статусу про успішне відправлення?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer4">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer4">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question js-question">
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                У версії для десктопа відсутня адаптивність тексту (розмір, шрифт)?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer5">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer5">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи було меню не клікабельне?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer6">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer6">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question js-question">
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи є версія для десктопа?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer7">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer7">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Таймер зворотного відліку працює некоректно?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer8">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer8">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question js-question">
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи були проблеми з підвантаженням відео?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer9">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer9">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Клік на логотип сайту веде на головну сторінку сайту?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer10">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer10">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question js-question">
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи в правильному місці розташоване тире в знижці?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer11">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer11">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                При натисканні кнопки "придбати зараз" чи опускає вона вас в самий низ, для заповнення
+                                форми?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer12">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer12">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question js-question">
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                У мобільній версії некоректне відображення статус бару?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer13">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer13">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Всі зображення були адаптовані під мобільну версію (поміщалися на екрані)?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer14">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer14">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question js-question">
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи псують іконки зовнішній вигляд сайту?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer15">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer15">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box quest__box">
+                            <p class="quest__question">
+                                Чи відповідають відгуки товару?
+                            </p>
+                            <div class="quest__answer">
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer16">
+                                    <span>Так</span>
+                                </label>
+                                <label class="quest__answer_item">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer16">
+                                    <span>Ні</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="button__next">
+                    <button class="button js-change-question">
+                        <span>Далі</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.08334 4.16668L12.9167 10L7.08334 15.8333" stroke="" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="progress__mob_mob">
+                    <div class="progress__active_mob_mob js-progress-active-mob-mob"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="screen success js-screen js-success">
+            <div class="container">
+                <h2 class="success__title">Вітаємо Тебе!</h2>
+                <p class="box success__text">
+                    З тобою зв’яжеться наш представник і скаже як скористатись призом:) А поки ми перенаправляємо тебе
+                    на корисний телеграм канал!)
+                </p>
+                <a href="" class="telegram__link">
+                    <span>Перейти</span>
+                    <img src="img/telegram-logo.svg" alt="" width="24" height="24">
+                </a>
+            </div>
+        </section>
+
+        <section class="screen failure js-screen js-failure">
+            <div class="container">
+                <h2 class="failure__title">На жаль час вийшов :(</h2>
+                <p class="box failure__text">
+                    З тобою зв’яжеться наш представник і скаже як скористатись призом:) А поки ми перенаправляємо тебе
+                    на корисний телеграм канал!)
+                </p>
+                <a href="" class="telegram__link">
+                    <span>Перейти</span>
+                    <img src="img/telegram-logo.svg" alt="" width="24" height="24">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>
