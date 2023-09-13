@@ -31,12 +31,14 @@ class CountdownTimer {
 
                     const dataForm = document.querySelector(".js-data-form");
 
+                    dataForm.querySelector('input[name="phone"]').value = `'${document.querySelector('.js-data-phone').value}`
+
                     fetch(scriptURL, {
                         method: "POST",
                         body: new FormData(dataForm),
                     })
                         .then((response) => response.text()) // Преобразование ответа в текст
-                        .then((data) => console.log("Success!", data)) // Обработка успешного ответа
+                        .then((data) => console.log("Success!")) // Обработка успешного ответа
                         .catch((error) =>
                             console.error("Error!", error.message)
                         ); // Обработка ошибки
