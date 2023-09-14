@@ -1,3 +1,10 @@
+// block reload
+
+window.addEventListener("beforeunload", function (e) {
+    e.preventDefault();
+    e.returnValue = "";
+});
+
 // timer
 let isTimerWork = true;
 
@@ -31,7 +38,9 @@ class CountdownTimer {
 
                     const dataForm = document.querySelector(".js-data-form");
 
-                    dataForm.querySelector('input[name="phone"]').value = `'${document.querySelector('.js-data-phone').value}`
+                    dataForm.querySelector('input[name="phone"]').value = `'${
+                        document.querySelector(".js-data-phone").value
+                    }`;
 
                     fetch(scriptURL, {
                         method: "POST",
@@ -98,11 +107,23 @@ const handleChangeScreenListener = () => {
         elem.classList.remove("is-active");
     });
 
-    handleSaveDataToLS(
-        dataInput[0].value,
-        dataInput[1].value,
-        dataInput[2].value
-    );
+    const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw4OksMn-XiYwn_vqtrtiBh2c0AJzqaduHx4Y9qtTs9WsiR620l18zTxDMHnAs0E9lDXQ/exec";
+
+    const dataForm = document.querySelector(".js-data-form");
+
+    dataForm.querySelector('input[name="phone"]').value = `'${
+        document.querySelector(".js-data-phone").value
+    }`;
+
+    fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(dataForm),
+    })
+        .then((response) => response.text()) // Преобразование ответа в текст
+        .then((data) => console.log("Success!")) // Обработка успешного ответа
+        .catch((error) => console.error("Error!", error.message)); // Обработка ошибки
+
     screen[1].classList.add("is-active");
     timer.start();
 };

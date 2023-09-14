@@ -34,6 +34,7 @@
                     <p class="data__title">Контактні дані</p>
                     <p class="data__subtitle">Заповняй форму нижче і ми з тобою обов'язково зв'яжемося</p>
                     <form class="data__form js-data-form">
+                        <input type="hidden" name="sheetName" value="1922463825">
                         <div class="data__form_header">
                             <label class="data__form_label">
                                 <span>Ім’я та Прізвище</span>
@@ -52,7 +53,7 @@
                 </div>
                 <div class="button__next">
                     <button class="button js-change-screen">
-                        <span>Далі</span>
+                        <span>Почати квіз</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.08334 4.16668L12.9167 10L7.08334 15.8333" stroke="" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -89,15 +90,15 @@
                     <div class="question js-question is-active">
                         <div class="box quest__box">
                             <p class="quest__question">
-                                Чи було обмеження обмеження за кількістю символів по введенню в поле ім'я?
+                                Чи було обмеження за кількістю символів по введенню в поле ім'я?
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer1">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer1" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer1">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer1" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -108,11 +109,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer2">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer2" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer2">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer2" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -125,11 +126,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer3">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer3" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer3">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer3" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -140,11 +141,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer4">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer4" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer4">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer4" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -157,11 +158,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer5">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer5" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer5">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer5" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -172,11 +173,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer6">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer6" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer6">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer6" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -189,11 +190,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer7">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer7" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer7">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer7" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -204,11 +205,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer8">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer8" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer8">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer8" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -221,11 +222,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer9">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer9" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer9">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer9" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -236,11 +237,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer10">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer10" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer10">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer10" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -253,11 +254,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer11">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer11" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer11">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer11" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -269,11 +270,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer12">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer12" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer12">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer12" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -286,11 +287,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer13">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer13" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer13">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer13" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -301,11 +302,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer14">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer14" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer14">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer14" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -318,11 +319,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer15">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer15" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer15">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer15" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
@@ -333,11 +334,11 @@
                             </p>
                             <div class="quest__answer">
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer16">
+                                    <input type="radio" class="quest__radio js-radio" value="Так" name="answer16" required>
                                     <span>Так</span>
                                 </label>
                                 <label class="quest__answer_item">
-                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer16">
+                                    <input type="radio" class="quest__radio js-radio" value="Ні" name="answer16" required>
                                     <span>Ні</span>
                                 </label>
                             </div>
